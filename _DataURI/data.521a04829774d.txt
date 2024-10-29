@@ -1,0 +1,1 @@
+chrome-extension://imopknpgdihifjkjpmjaagcagkefddnb/libs/jquery.Jcrop.min.js
