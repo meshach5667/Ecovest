@@ -4,11 +4,38 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <style>
+      /* Primary color adjustments */
+      :root {
+        --bs-primary: #10684b; /* Light green */
+        --bs-secondary: #ffffff; /* Light blue */
+      }
+    
+      /* Override theme colors */
+      .bg-primary {
+        background-color: var(--bs-primary) !important;
+      }
+      .text-primary {
+        color: var(--bs-primary) !important;
+      }
+      .btn-primary {
+        background-color: var(--bs-primary) !important;
+        border-color: var(--bs-primary) !important;
+      }
+      .btn-warning {
+        background-color: var(--bs-secondary) !important;
+        border-color: var(--bs-secondary) !important;
+      }
+      .swiper-nav .swiper-button-prev, .swiper-nav .swiper-button-next {
+        color: var(--bs-secondary) !important;
+      }
+    </style>
+    
     <!-- ===============================================-->
     <!--    Document Title-->
     <!-- ===============================================-->
     <title>Ecovest Technologies</title>
+
 
     <!-- ===============================================-->
     <!--    Favicons-->
@@ -49,7 +76,7 @@
     <!-- ===============================================-->
     <link href="./prium.github.io/elixir/v3.0.0/vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <link href="./prium.github.io/elixir/v3.0.0/vendors/hamburgers/hamburgers.min.css" rel="stylesheet" />
-    <link href="./prium.github.io/elixir/v3.0.0/vendors/loaders.css/loaders.min.css" rel="stylesheet" />
+    <!-- <link href="./prium.github.io/elixir/v3.0.0/vendors/loaders.css/loaders.min.css" rel="stylesheet" /> -->
     <link href="./prium.github.io/elixir/v3.0.0/assets/css/theme.min.css" rel="stylesheet" />
     <link href="./prium.github.io/elixir/v3.0.0/assets/css/user.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -61,8 +88,8 @@
   </head>
 
   <body>
-    <div class="bg-primary py-3 d-none d-sm-block text-white fw-bold">
-      <div class="container">
+    <!-- <div class="bg-primary py-3 d-none d-sm-block text-white fw-bold" style="color: #10684b;">
+      <div class="container" style="color: #10684b;">
         <div class="row align-items-center gx-4">
           <div class="col-auto d-none d-lg-block fs--1">
             <span
@@ -93,12 +120,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="sticky-top navbar-elixir">
       <div class="container">
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="index.html"
-            ><img src="./prium.github.io/elixir/v3.0.0/assets/img/IMG_0206.PNG" alt="logo" width="100" height="100"/></a
+            ><img src="./prium.github.io/elixir/v3.0.0/assets/img/IMG_0206.PNG" alt="logo" width="50" /></a
           ><button
             class="navbar-toggler p-0"
             type="button"
@@ -116,16 +143,20 @@
           <div class="collapse navbar-collapse" id="primaryNavbarCollapse">
             <ul class="navbar-nav py-3 py-lg-0 mt-1 mb-2 my-lg-0 ms-lg-n1">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.html" style="color: #10684b;">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">About</a>
+                <a class="nav-link" href="" style="color: #10684b;">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects</a>
+                <a class="nav-link" href="services.html" style="color: #10684b;">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="projects.html" style="color: #10684b;">Projects</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" style="color: #10684b;">Contact</a>
               </li>
             </ul>
           </div>
@@ -157,7 +188,7 @@
             <div class="swiper-slide" data-zanim-timeline="{}">
               <div
                 class="bg-holder"
-                style="background-image: url(./prium.github.io/elixir/v3.0.0/assets/img/header-6.jpg)"
+                style="background-image: url(./prium.github.io/elixir/v3.0.0/assets/img/1b.jpg)"
               ></div>
               <!--/.bg-holder-->
               <div class="container">
@@ -167,14 +198,14 @@
                 >
                   <div class="col-sm-8 col-lg-7 px-5 px-sm-3">
                     <div class="overflow-hidden">
-                      <h1 class="fs-4 fs-md-5 lh-1" data-zanim-xs='{"delay":0}'>
+                      <h1 class="fs-4 fs-md-5 lh-1" data-zanim-xs='{"delay":0}' style="color:#10684b">
                         Data-Driven Environmental Impact
                       </h1>
                     </div>
                     <div class="overflow-hidden">
                       <p
-                        class="text-primary pt-4 mb-5 fs-1 fs-md-2 lh-xs"
-                        data-zanim-xs='{"delay":0.1}'
+                        class="pt-4 mb-5 fs-1 fs-md-2 lh-xs"
+                        data-zanim-xs='{"delay":0.1}' style="color: #ffffff;"
                       >
                         Combining cutting-edge technology and deep analytics, we
                         empower organizations to drive measurable, sustainable
@@ -201,7 +232,7 @@
             <div class="swiper-slide" data-zanim-timeline="{}">
               <div
                 class="bg-holder"
-                style="background-image: url(./prium.github.io/elixir/v3.0.0/assets/img/header-5.jpg)"
+                style="background-image: url(./prium.github.io/elixir/v3.0.0/assets/img/1a...jpg)"
               ></div>
               <!--/.bg-holder-->
               <div class="container">
@@ -211,14 +242,14 @@
                 >
                   <div class="col-sm-8 col-lg-7 px-5 px-sm-3">
                     <div class="overflow-hidden">
-                      <h1 class="fs-4 fs-md-5 lh-1" data-zanim-xs='{"delay":0}'>
+                      <h1 class="fs-4 fs-md-5 lh-1" data-zanim-xs='{"delay":0}' style="color: #10684b;">
                         Beyond Compliance, Toward Stewardship
                       </h1>
                     </div>
                     <div class="overflow-hidden">
                       <p
-                        class="text-primary pt-4 mb-5 fs-1 fs-md-2 lh-xs"
-                        data-zanim-xs='{"delay":0.1}'
+                        class=" pt-4 mb-5 fs-1 fs-md-2 lh-xs"
+                        data-zanim-xs='{"delay":0.1}' style="color: #ffffff;"
                       >
                         More than meeting regulations we guide our clients in
                         becoming true environmental stewards.
@@ -244,7 +275,7 @@
             <div class="swiper-slide" data-zanim-timeline="{}">
               <div
                 class="bg-holder"
-                style="background-image: url(./prium.github.io/elixir/v3.0.0/assets/img/header-1.jpg)"
+                style="background-image: url(./prium.github.io/elixir/v3.0.0/assets/img/1a.jpg)"
               ></div>
               <!--/.bg-holder-->
               <div class="container">
@@ -253,16 +284,16 @@
                   data-inertia='{"weight":1.5}'
                 >
                   <div class="col-sm-8 col-lg-7 px-5 px-sm-3">
-                    
+
                     <div class="overflow-hidden">
-                      <h1 class="fs-4 fs-md-5 lh-1" data-zanim-xs='{"delay":0}'>
+                      <h1 class="fs-4 fs-md-5 lh-1" data-zanim-xs='{"delay":0}' style="color: #10684b;">
                         Practical Insights, Lasting Change
                       </h1>
                     </div>
                     <div class="overflow-hidden">
                       <p
-                        class="text-primary pt-4 mb-5 fs-1 fs-md-2 lh-xs"
-                        data-zanim-xs='{"delay":0.1}'
+                        class=" pt-4 mb-5 fs-1 fs-md-2 lh-xs"
+                        data-zanim-xs='{"delay":0.1}' style="color: #ffffff;"
                       >
                         Our approach enables impactful, sustainable decisions
                         that foster real, positive environmental change.
@@ -299,11 +330,11 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="bg-white text-center">
+      <section class="bg-white text-center" >
         <div class="container">
           <div class="row justify-content-center text-center">
             <div class="col-10 col-md-6">
-              <h3 class="fs-2 fs-lg-3">Welcome to Ecovest Technologies</h3>
+              <h3 class="fs-2 fs-lg-3" style="color: #10684b;">Welcome to Ecovest Technologies</h3>
               <p class="px-lg-4 mt-3">
                 Where innovation meets environmental sustainability.
               </p>
@@ -320,10 +351,10 @@
               data-zanim-timeline="{}"
               data-zanim-trigger="scroll"
             >
-              <div class="ring-icon mx-auto" data-zanim-xs='{"delay":0}'>
-                <span class="far fa-chart-bar"></span>
+              <div class="ring-icon mx-auto" data-zanim-xs='{"delay":0}' >
+                <span class="far fa-chart-bar" style="color:#10684b;"></span>
               </div>
-              <h5 class="mt-4" data-zanim-xs='{"delay":0.1}'>
+              <h5 class="mt-4" data-zanim-xs='{"delay":0.1}' style="color: #10684b;">
                 Sustainable Consulting
               </h5>
               <p class="mb-0 mt-3 px-3" data-zanim-xs='{"delay":0.2}'>
@@ -337,9 +368,9 @@
                 data-zanim-trigger="scroll"
               >
                 <div class="ring-icon mx-auto" data-zanim-xs='{"delay":0}'>
-                  <span class="fas fa-leaf"></span>
+                  <span class="fas fa-leaf" style="color:#10684b;"></span>
                 </div>
-                <h5 class="mt-4" data-zanim-xs='{"delay":0.1}'>
+                <h5 class="mt-4" data-zanim-xs='{"delay":0.1}' style="color: #10684b;">
                   Environmental Risk Management
                 </h5>
                 <p class="mb-0 mt-3 px-3" data-zanim-xs='{"delay":0.2}'>
@@ -353,9 +384,9 @@
                 data-zanim-trigger="scroll"
               >
                 <div class="ring-icon mx-auto" data-zanim-xs='{"delay":0}'>
-                  <span class="fas fa-search"></span>
+                  <span class="fas fa-search" style="color:#10684b;"></span>
                 </div>
-                <h5 class="mt-4" data-zanim-xs='{"delay":0.1}'>
+                <h5 class="mt-4" data-zanim-xs='{"delay":0.1}' style="color: #10684b;">
                   Green Market Insights
                 </h5>
                 <p class="mb-0 mt-3 px-3" data-zanim-xs='{"delay":0.2}'>
@@ -369,9 +400,9 @@
                 data-zanim-trigger="scroll"
               >
                 <div class="ring-icon mx-auto" data-zanim-xs='{"delay":0}'>
-                  <span class="fas fa-hand-holding-heart"></span>
+                  <span class="fas fa-hand-holding-heart" style="color:#10684b;"></span>
                 </div>
-                <h5 class="mt-4" data-zanim-xs='{"delay":0.1}'>
+                <h5 class="mt-4" data-zanim-xs='{"delay":0.1}' style="color: #10684b;">
                   Quality Environmental Services
                 </h5>
                 <p class="mb-0 mt-3 px-3" data-zanim-xs='{"delay":0.2}'>
@@ -386,36 +417,32 @@
       <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section class="pt-0">
-        <div class="container">
-          <div class="row flex-center text-center pb-6">
-            <div class="col-12">
-              <div class="position-relative mt-4 py-5 py-md-11">
-                <div
-                  class="bg-holder rounded-3"
-                  style="
-                    background-image: url(assets/img/video-screenshot-2.jpg);
-                  "
-                ></div>
-                <!--/.bg-holder-->
-                <button
-                  class="btn-elixir-play"
-                  data-bigpicture='{"ytSrc":"jlWMTNZNOc0"}'
-                  data-zanim-trigger="scroll"
-                  data-zanim-xs='{"from":{"opacity":0,"scale":0.8},"to":{"opacity":1,"scale":1},"duration":1}'
-                >
-                  <span class="fas fa-play fs-1"></span>
-                </button>
-              </div>
-            </div>
-          </div>
+    <div class="container">
+  <div class="row flex-center text-center pb-6">
+    <div class="col-12">
+      <div class="position-relative mt-4 py-5 py-md-11">
+        <div
+          class="bg-holder rounded-3"
+          style="
+            background-image: url(./prium.github.io/elixir/v3.0.0/assets/img/StockSnap_26TCI436RB.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 400px; /* Adjust the height as needed */
+          "
+        ></div>
+      </div>
+    </div>
+  </div>
+</div>
+
           <div class="row">
             <div
               class="col-sm-6 col-lg-4 mt-3 mt-lg-0 px-4 px-sm-3"
               data-zanim-timeline="{}"
               data-zanim-trigger="scroll"
             >
-            <h5 data-zanim-xs='{"delay":0}'>
-                <span class="text-primary me-3 fas fa-users"></span>Incredible Team
+            <h5 data-zanim-xs='{"delay":0}' style="color: #10684b;">
+                <span class=" me-3 fas fa-users"></span>Incredible Team
               </h5>
               <p class="mt-3 pe-3 pe-lg-5" data-zanim-xs='{"delay":0.1}'>
                 Before discussing goals, we dive deep into your organization <br />
@@ -427,8 +454,8 @@
                 data-zanim-timeline="{}"
                 data-zanim-trigger="scroll"
               >
-                <h5 data-zanim-xs='{"delay":0}'>
-                  <span class="text-primary me-3 fas fa-comments"></span>Outstanding Support
+                <h5 data-zanim-xs='{"delay":0}' style="color:#10684b;" >
+                  <span class=" me-3 fas fa-comments"></span>Outstanding Support
                 </h5>
                 <p class="mt-3 pe-3 pe-lg-5" data-zanim-xs='{"delay":0.1}'>
                   Whenever you encounter issues, our dedicated support team <br />
@@ -440,8 +467,8 @@
                 data-zanim-timeline="{}"
                 data-zanim-trigger="scroll"
               >
-                <h5 data-zanim-xs='{"delay":0}'>
-                  <span class="text-primary me-3 fas fa-bolt"></span>Enhanced Efficiency
+                <h5 data-zanim-xs='{"delay":0}' style="color:#10684b;" >
+                  <span class=" me-3 fas fa-bolt"></span>Enhanced Efficiency
                 </h5>
                 <p class="mt-3 pe-3 pe-lg-5" data-zanim-xs='{"delay":0.1}'>
                   We utilize a structured, methodical process from concept <br />
@@ -459,7 +486,7 @@
       <section class="bg-100">
         <div class="container">
           <div class="text-center mb-6">
-            <h3 class="fs-2 fs-md-3">Our Services</h3>
+            <h3 class="fs-2 fs-md-3" style="color:#10684b;" >Our Services</h3>
             <hr
               class="short"
               data-zanim-xs='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}'
@@ -473,7 +500,7 @@
             >
               <div
                 class="bg-holder rounded-ts-lg rounded-te-lg rounded-lg-te-0"
-                style="background-image: url(assets/img/6.jpg)"
+                style="background-image: url(./prium.github.io/elixir/v3.0.0/assets/img/istockphoto-1427250003-612x612.jpg)"
               ></div>
               <!--/.bg-holder-->
             </div>
@@ -484,7 +511,7 @@
               <div class="d-flex align-items-center h-100">
                 <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                   <div class="overflow-hidden">
-                    <h5 data-zanim-xs='{"delay":0}'>
+                    <h5 data-zanim-xs='{"delay":0}' style="color:#10684b;" >
                       Sustainable Investment Solutions
                     </h5>
                   </div>
@@ -500,7 +527,7 @@
                   </div>
                   <div class="overflow-hidden">
                     <div data-zanim-xs='{"delay":0.2}'>
-                      <a class="d-flex align-items-center" href="#!"
+                      <a style="color:#10684b;" class="d-flex align-items-center" href="#!"
                         >Learn More
                         <div class="overflow-hidden ms-2">
                           <span
@@ -523,7 +550,7 @@
             >
               <div
                 class="bg-holder rounded-ts-lg rounded-te-lg rounded-lg-te-0 rounded-lg-ts-0"
-                style="background-image: url(assets/img/7.jpg)"
+                style="background-image: url(./prium.github.io//elixir/v3.0.0/assets/img/istockphoto-1901498716-612x612.jpg)"
               ></div>
               <!--/.bg-holder-->
             </div>
@@ -534,7 +561,7 @@
               <div class="d-flex align-items-center h-100">
                 <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                   <div class="overflow-hidden">
-                    <h5 data-zanim-xs='{"delay":0}'>
+                    <h5 data-zanim-xs='{"delay":0}' style="color:#10684b;" >
                       Data-Driven Decision Making
                     </h5>
                   </div>
@@ -550,7 +577,7 @@
                   </div>
                   <div class="overflow-hidden">
                     <div data-zanim-xs='{"delay":0.2}'>
-                      <a class="d-flex align-items-center" href="#!"
+                      <a  style="color:#10684b;" class="d-flex align-items-center" href="#!"
                         >Learn More
                         <div class="overflow-hidden ms-2">
                           <span
@@ -573,7 +600,7 @@
             >
               <div
                 class="bg-holder rounded-ts-lg rounded-te-lg rounded-lg-te-0 rounded-lg-ts-0 rounded-bs-0 rounded-lg-bs-lg"
-                style="background-image: url(assets/img/8.jpg)"
+                style="background-image: url(./prium.github.io/elixir/v3.0.0/assets/img/istockphoto-1901497163-612x612.jpg)"
               ></div>
               <!--/.bg-holder-->
             </div>
@@ -584,7 +611,7 @@
               <div class="d-flex align-items-center h-100">
                 <div data-zanim-timeline="{}" data-zanim-trigger="scroll">
                   <div class="overflow-hidden">
-                    <h5 data-zanim-xs='{"delay":0}'>Green Energy Solutions</h5>
+                    <h5 data-zanim-xs='{"delay":0}' style="color:#10684b;" >Green Energy Solutions</h5>
                   </div>
                   <div class="overflow-hidden">
                     <p class="mt-3" data-zanim-xs='{"delay":0.1}'>
@@ -599,7 +626,7 @@
                   </div>
                   <div class="overflow-hidden">
                     <div data-zanim-xs='{"delay":0.2}'>
-                      <a class="d-flex align-items-center" href="#!"
+                      <a  style="color:#10684b;" class="d-flex align-items-center" href="#!"
                         >Learn More
                         <div class="overflow-hidden ms-2">
                           <span
@@ -621,8 +648,8 @@
               data-zanim-timeline="{}"
               data-zanim-trigger="scroll"
             >
-              <h5 data-zanim-xs='{"delay":0}'>
-                <span class="text-primary fs-0 me-3 far fa-credit-card"></span
+              <h5 data-zanim-xs='{"delay":0}'  style="color:#10684b;"  >
+                <span class=" fs-0 me-3 far fa-credit-card"></span
                 >Special financing
               </h5>
               <p class="mt-3 pe-3 pe-lg-5 mb-0" data-zanim-xs='{"delay":0.1}'>
@@ -634,8 +661,8 @@
               data-zanim-timeline="{}"
               data-zanim-trigger="scroll"
             >
-              <h5 data-zanim-xs='{"delay":0}'>
-                <span class="text-primary fs-0 me-3 fas fa-comment-alt"></span
+              <h5 data-zanim-xs='{"delay":0}' style="color:#10684b;" >
+                <span class=" fs-0 me-3 fas fa-comment-alt"></span
                 >Chat with team
               </h5>
               <p class="mt-3 pe-3 pe-lg-5 mb-0" data-zanim-xs='{"delay":0.1}'>
@@ -651,8 +678,8 @@
               data-zanim-timeline="{}"
               data-zanim-trigger="scroll"
             >
-              <h5 data-zanim-xs='{"delay":0}'>
-                <span class="text-primary fs-0 me-3 fas fa-phone-alt"></span
+              <h5 data-zanim-xs='{"delay":0}' style="color:#10684b;" >
+                <span class=" fs-0 me-3 fas fa-phone-alt"></span
                 >Call a specialist
               </h5>
               <p class="mt-3 pe-3 pe-lg-5 mb-0" data-zanim-xs='{"delay":0.1}'>
@@ -671,7 +698,7 @@
         <section>
             <div class="container">
               <div class="text-center mb-7">
-                <h3 class="fs-2 fs-md-3">Why Choose Ecovest</h3>
+                <h3 class="fs-2 fs-md-3" style="color: #10684b;">Why Choose Ecovest</h3>
                 <hr
                   class="short"
                   data-zanim-xs='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}'
@@ -682,7 +709,7 @@
                 <div class="col-lg-6 pe-lg-3">
                   <img
                     class="rounded-3 img-fluid"
-                    src="./prium.github.io/elixir/v3.0.0/assets/img/why-choose-us.jpg"
+                    src="./prium.github.io/elixir/v3.0.0/assets/img/pexels-ron-lach-8821003.jpg"
                     alt="about"
                   />
                 </div>
@@ -694,12 +721,12 @@
                   <!-- Commitment to Sustainability -->
                   <div class="overflow-hidden">
                     <div class="px-4 px-sm-0" data-zanim-xs='{"delay":0}'>
-                      <h5 class="fs-0 fs-lg-1">
+                      <h5 class="fs-0 fs-lg-1" style="color: #10684b  ;">
                         <span
                           class="fas fa-seedling fs-1 me-2"
                           data-fa-transform="flip-h"
                         ></span
-                        >Commitment to Sustainability
+                         >Commitment to Sustainability
                       </h5>
                       <p class="mt-3">
                         At Ecovest, we go beyond compliance, fostering real change in environmental impact. Our commitment to sustainable solutions drives growth and resilience in all we do.
@@ -709,7 +736,7 @@
                   <!-- Innovative Solutions -->
                   <div class="overflow-hidden">
                     <div class="px-4 px-sm-0 mt-5" data-zanim-xs='{"delay":0}'>
-                      <h5 class="fs-0 fs-lg-1">
+                      <h5 class="fs-0 fs-lg-1" style="color: #10684b;" >
                         <span
                           class="fas fa-lightbulb fs-1 me-2"
                           data-fa-transform="shrink-1"
@@ -724,7 +751,7 @@
                   <!-- Unmatched Support -->
                   <div class="overflow-hidden">
                     <div class="px-4 px-sm-0 mt-5" data-zanim-xs='{"delay":0}'>
-                      <h5 class="fs-0 fs-lg-1">
+                      <h5 class="fs-0 fs-lg-1"  style="color: #10684b;"  >
                         <span
                           class="fas fa-headset fs-1 me-2"
                           data-fa-transform="grow-1"
@@ -747,7 +774,7 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="bg-primary py-6 text-center text-md-start">
+      <section style="background-color:#10684b;" class="py-6 text-center text-md-start" >
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md">
@@ -773,7 +800,7 @@
         <section class="text-center" id="about">
             <div class="container">
               <div class="text-center mb-7">
-                <h3 class="fs-2 fs-md-3">About Ecovest Technologies</h3>
+                <h3 class="fs-2 fs-md-3" style="color: #10684b;">About Ecovest Technologies</h3>
                 <hr class="short"
                      data-zanim-xs='{"from":{"opacity":0,"width":0},"to":{"opacity":1,"width":"4.20873rem"},"duration":0.8}'
                      data-zanim-trigger="scroll" />
@@ -785,7 +812,7 @@
                 <div class="col-lg-6 px-lg-5 mt-6 mt-lg-0" data-zanim-timeline="{}" data-zanim-trigger="scroll">
                   <div class="overflow-hidden">
                     <div class="px-4 px-sm-0" data-zanim-xs='{"delay":0}'>
-                      <h5 class="fs-0 fs-lg-1">
+                      <h5 class="fs-0 fs-lg-1" style="color: #10684b;">
                         <span class="fas fa-leaf fs-1 me-2"></span>
                         Empowering Sustainability with Innovation
                       </h5>
@@ -796,7 +823,7 @@
                   </div>
                   <div class="overflow-hidden mt-4">
                     <div class="px-4 px-sm-0" data-zanim-xs='{"delay":0.1}'>
-                      <h5 class="fs-0 fs-lg-1">
+                      <h5 class="fs-0 fs-lg-1" style="color: #10684b;">
                         <span class="fas fa-globe fs-1 me-2"></span>
                         Commitment to Environmental Integrity
                       </h5>
@@ -816,80 +843,95 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="bg-primary">
-        <div class="container">
-          <div class="row align-items-center text-white">
-            <div class="col-lg-4">
-              <div
-                class="border border-2 border-warning p-4 py-lg-5 text-center rounded-3"
-                data-zanim-timeline="{}"
-                data-zanim-trigger="scroll"
-              >
-                <div class="overflow-hidden">
-                  <h4 class="text-white" data-zanim-xs='{"delay":0}'>
-                    Request a call back
-                  </h4>
-                </div>
-                <div class="overflow-hidden">
-                  <p
-                    class="px-lg-1 text-100 mb-0"
-                    data-zanim-xs='{"delay":0.1}'
-                  >
-                    Would you like to speak to one of our financial advisers
-                    over the phone? Just submit your details and we’ll be in
-                    touch shortly. You can also email us if you would prefer.
-                  </p>
-                </div>
+        <section style="background-color:#10684b;">
+          <div class="container">
+              <div class="row align-items-center text-white">
+                  <div class="col-lg-4">
+                      <div class="border border-2 p-4 py-lg-5 text-center rounded-3" style="color: rgb(211, 211, 211);" data-zanim-timeline="{}" data-zanim-trigger="scroll">
+                          <div class="overflow-hidden">
+                              <h4 class="text-white" data-zanim-xs='{"delay":0}'>
+                                  Request a call back
+                              </h4>
+                          </div>
+                          <div class="overflow-hidden">
+                              <p class="px-lg-1 text-100 mb-0" data-zanim-xs='{"delay":0.1}'>
+                                  Would you like to speak to one of our financial advisers over the phone? Just submit your details and we’ll be in touch shortly. You can also email us if you would prefer.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-8 ps-lg-5 mt-6 mt-lg-0">
+                      <h5 class="text-white">I would like to discuss:</h5>
+                      <form class="mt-4" method="post" id="callbackForm" onsubmit="submitForm(event)">
+                          <div class="row">
+                              <div class="col-6">
+                                  <input class="form-control" type="hidden" name="to" value="username@domain.extension" />
+                                  <input class="form-control" id="name" type="text" placeholder="Your Name" aria-label="Your Name" required />
+                              </div>
+                              <div class="col-6">
+                                  <input class="form-control" id="phone" type="text" placeholder="Phone Number" aria-label="Phone Number" required />
+                              </div>
+                              <div class="col-6 mt-4">
+                                  <input class="form-control" id="subject" type="text" placeholder="Subject" aria-label="Subject" required />
+                              </div>
+                              <div class="col-6 mt-4">
+                                  <button class="btn btn-warning w-100" type="submit">Submit</button>
+                              </div>
+                          </div>
+                      </form>
+                      <div id="responseMessage" class="mt-4 text-white" style="display:none;">
+                          <p>Thank you for your submission! We will get in touch with you shortly.</p>
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="col-lg-8 ps-lg-5 mt-6 mt-lg-0">
-              <h5 class="text-white">I would like to discuss:</h5>
-              <form class="mt-4" method="post">
-                <div class="row">
-                  <div class="col-6">
-                    <input
-                      class="form-control"
-                      type="hidden"
-                      name="to"
-                      value="username@domain.extension"
-                    /><input
-                      class="form-control"
-                      type="text"
-                      placeholder="Your Name"
-                      aria-label="Your Name"
-                    />
-                  </div>
-                  <div class="col-6">
-                    <input
-                      class="form-control"
-                      type="text"
-                      placeholder="Phone Number"
-                      aria-label="Phone Number"
-                    />
-                  </div>
-                  <div class="col-6 mt-4">
-                    <input
-                      class="form-control"
-                      type="text"
-                      placeholder="Subject"
-                      aria-label="Subject"
-                    />
-                  </div>
-                  <div class="col-6 mt-4">
-                    <button class="btn btn-warning w-100" type="submit">
-                      Submit
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
           </div>
-        </div>
-        <!-- end of .container-->
       </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-
+      
+      <script>
+          // Function to handle form submission
+          function submitForm(event) {
+              // Prevent default form submission behavior
+              event.preventDefault();
+              
+              // Get form values
+              const name = document.getElementById('name').value;
+              const phone = document.getElementById('phone').value;
+              const subject = document.getElementById('subject').value;
+      
+              // Prepare data to send to backend
+              const formData = {
+                  name: name,
+                  phone: phone,
+                  subject: subject
+              };
+      
+              // Send the data using fetch
+              fetch('http://localhost:5000/submitForm', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify(formData)
+              })
+              .then(response => response.json())
+              .then(data => {
+                  if (data.success) {
+                      // Show success message and reset form
+                      const responseMessage = document.getElementById('responseMessage');
+                      responseMessage.style.display = 'block';
+                      document.getElementById('callbackForm').reset(); // Reset the form
+                  } else {
+                      // Show error message
+                      alert('Failed to submit the form');
+                  }
+              })
+              .catch(error => {
+                  console.error('Error:', error);
+                  alert('Something went wrong!');
+              });
+          }
+      </script>
+      
      
 
       <!-- ============================================-->
@@ -897,19 +939,15 @@
       <section>
         <div
           class="bg-holder overlay overlay-elixir"
-          style="background-image: url(./prium.github.io/elixir/v3.0.0/assets/img/background-15.jpg)"
+          style="background-image: url(./prium.github.io/elixir/v3.0.0/assets/img/StockSnap_OGUY6JXNBC.jpg)"
         ></div>
         
         <div class="container">
           <div class="d-flex">
             <span class="me-3">
-              <img
-                src="./prium.github.io/elixir/v3.0.0/assets/img/checkmark.png"
-                alt="checkmark"
-                style="width: 55px"
-            /></span>
+             </span>
             <div class="flex-1">
-              <h2 class="text-warning fs-3 fs-lg-4">
+              <h2 class="fs-3 fs-lg-4"  style="color: #10684b;">
                 Take the right step,<br /><span class="text-white"
                   >do the big things.</span
                 >
@@ -958,7 +996,7 @@
                     data-zanim-xs='{"delay":0.1}'
                     data-countup='{"endValue":38}'
                   >
-                    38
+                   0
                   </div>
                   <h6 class="fs-0 text-white" data-zanim-xs='{"delay":0.2}'>
                     Branches
@@ -991,92 +1029,7 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="bg-white">
-        <div class="container">
-          <div
-            class="swiper theme-slider"
-            data-swiper='{"loop":true,"slidesPerView":1,"autoplay":{"delay":5000}}'
-          >
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="row px-lg-8">
-                  <div class="col-4 col-md-3 mx-auto">
-                    <img
-                      class="rounded-3 mx-auto img-fluid"
-                      src="./prium.github.io/elixir/v3.0.0/assets/img/client1.png"
-                      alt="Member"
-                    />
-                  </div>
-                  <div class="col-md-9 mt-4 mt-md-0 px-4 px-sm-3">
-                    <p class="lead">
-                      Their work on our website and Internet marketing has made
-                      a significant different to our business. We’ve seen a 425%
-                      increase in quote requests from the website which has been
-                      pretty remarkable – but I’d always like to see more!
-                    </p>
-                    <h6 class="fs-0 mb-1 mt-4">Michael Clarke</h6>
-                    <p class="mb-0 text-500">CEO, A.E.T Institute</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="row px-lg-8">
-                  <div class="col-4 col-md-3 mx-auto">
-                    <img
-                      class="rounded-3 mx-auto img-fluid"
-                      src="./prium.github.io/elixir/v3.0.0/assets/img/client2.png"
-                      alt="Member"
-                    />
-                  </div>
-                  <div class="col-md-9 mt-4 mt-md-0 px-4 px-sm-3">
-                    <p class="lead">
-                      Writing case studies was a daunting task for us. We didn’t
-                      know where to begin or what questions to ask, and clients
-                      never seemed to follow through when we asked. Ecovest team
-                      did everything – with almost no time or effort for me!
-                    </p>
-                    <h6 class="fs-0 mb-1 mt-4">Maria Sharapova</h6>
-                    <p class="mb-0 text-500">
-                      Managing Director, Themewagon Inc.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="row px-lg-8">
-                  <div class="col-4 col-md-3 mx-auto">
-                    <img
-                      class="rounded-3 mx-auto img-fluid"
-                      src="./prium.github.io/elixir/v3.0.0/assets/img/client3.png"
-                      alt="Member"
-                    />
-                  </div>
-                  <div class="col-md-9 mt-4 mt-md-0 px-4 px-sm-3">
-                    <p class="lead">
-                      As a sales gamification company, we were skeptical to work
-                      with a consultant to optimize our sales emails, but
-                      Ecovest was highly recommended by many other Y-Combinator
-                      startups we knew. Ecovest helped us run a ~6 week email
-                      campaign.
-                    </p>
-                    <h6 class="fs-0 mb-1 mt-4">David Beckham</h6>
-                    <p class="mb-0 text-500">Chairman, Harmony Corporation</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-nav">
-              <div class="swiper-button-prev icon-item icon-item-lg">
-                <span class="fas fa-chevron-left fs--2"></span>
-              </div>
-              <div class="swiper-button-next icon-item icon-item-lg">
-                <span class="fas fa-chevron-right fs--2"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end of .container-->
-      </section>
+    
       <!-- <section> close ============================-->
       <!-- ============================================-->
 
@@ -1094,11 +1047,11 @@
 
     <!-- ============================================-->
     <!-- <section> begin ============================-->
-    <section style="background-color: #3d4c6f">
+    <section style="background-color:#10684b">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
-            <div class="bg-primary text-white p-5 p-lg-6 rounded-3">
+            <div class=" text-white p-5 p-lg-6 rounded-3" style="background-color: #10684b;">
               <h4 class="text-white fs-1 fs-lg-2 mb-1">
                 Sign up for email alerts
               </h4>
@@ -1125,7 +1078,7 @@
               </form>
             </div>
           </div>
-          <div class="col-lg-6 mt-4 mt-lg-0">
+          <div class="col-lg-6 mt-4 mt-lg-0" style="color: #10684b;">
             <div class="row">
               <div class="col-6 col-lg-4 text-white ms-lg-auto">
                 <ul class="list-unstyled">
@@ -1140,84 +1093,58 @@
                     <a class="text-white" href="#!">Terms of Use</a>
                   </li>
                   <li class="mb-3">
-                    <a class="text-white" href="#!">Global Office</a>
-                  </li>
-                  <li class="mb-3">
-                    <a class="text-white" href="#!">Local Office</a>
+                    <a class="text-white" href="#!">Office address</a>
                   </li>
                 </ul>
               </div>
               <div class="col-6 col-sm-5 ms-sm-auto">
                 <ul class="list-unstyled">
                   <li class="mb-3">
-                    <a
-                      class="text-decoration-none d-flex align-items-center"
-                      href="#!"
-                    >
-                      <span class="brand-icon me-3"
-                        ><span class="fab fa-linkedin-in"></span
-                      ></span>
-                      <h5 class="fs-0 text-white mb-0 d-inline-block">
-                        Linkedin
-                      </h5>
+                    <a class="text-decoration-none d-flex align-items-center" href="#!">
+                      <span class="brand-icon me-3 d-flex justify-content-center align-items-center" style="background-color: #3550ff; color: #ffffff; width: 40px; height: 40px; border-radius: 50%;">
+                        <span class="fab fa-linkedin-in"></span>
+                      </span>
+                      <h5 class="fs-0 text-white mb-0 d-inline-block">LinkedIn</h5>
                     </a>
                   </li>
                   <li class="mb-3">
-                    <a
-                      class="text-decoration-none d-flex align-items-center"
-                      href="#!"
-                    >
-                      <span class="brand-icon me-3"
-                        ><span class="fab fa-twitter"></span
-                      ></span>
-                      <h5 class="fs-0 text-white mb-0 d-inline-block">
-                        Twitter
-                      </h5>
+                    <a class="text-decoration-none d-flex align-items-center" href="#!">
+                      <span class="brand-icon me-3 d-flex justify-content-center align-items-center" style="background-color: #3550ff; color: #ffffff; width: 40px; height: 40px; border-radius: 50%;">
+                        <span class="fab fa-twitter"></span>
+                      </span>
+                      <h5 class="fs-0 text-white mb-0 d-inline-block">Twitter</h5>
                     </a>
                   </li>
                   <li class="mb-3">
-                    <a
-                      class="text-decoration-none d-flex align-items-center"
-                      href="#!"
-                    >
-                      <span class="brand-icon me-3"
-                        ><span class="fab fa-facebook-f"></span
-                      ></span>
-                      <h5 class="fs-0 text-white mb-0 d-inline-block">
-                        Facebook
-                      </h5>
+                    <a class="text-decoration-none d-flex align-items-center" href="#!">
+                      <span class="brand-icon me-3 d-flex justify-content-center align-items-center" style="background-color: #3550ff; color: #ffffff; width: 40px; height: 40px; border-radius: 50%;">
+                        <span class="fab fa-facebook-f"></span>
+                      </span>
+                      <h5 class="fs-0 text-white mb-0 d-inline-block">Facebook</h5>
                     </a>
                   </li>
                   <li class="mb-3">
-                    <a
-                      class="text-decoration-none d-flex align-items-center"
-                      href="#!"
-                    >
-                      <span class="brand-icon me-3"
-                        ><span class="fab fa-google-plus-g"></span
-                      ></span>
-                      <h5 class="fs-0 text-white mb-0 d-inline-block">
-                        Google+
-                      </h5>
+                    <a class="text-decoration-none d-flex align-items-center" href="#!">
+                      <span class="brand-icon me-3 d-flex justify-content-center align-items-center" style="background-color: #3550ff; color: #ffffff; width: 40px; height: 40px; border-radius: 50%;">
+                        <span class="fab fa-instagram"></span>
+                      </span>
+                      <h5 class="fs-0 text-white mb-0 d-inline-block">Instagram</h5>
                     </a>
                   </li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              
       <!-- end of .container-->
     </section>
     <!-- <section> close ============================-->
     <!-- ============================================-->
 
-    <footer class="footer bg-primary text-center py-4">
+    <footer class="footer text-center py-4" style="background-color: #10684b;">
       <div class="container">
         <div class="row align-items-center opacity-85 text-white">
           <div class="col-sm-3 text-sm-start">
             <a href="index.html"
-              ><img src="./prium.github.io/elixir/v3.0.0/assets/img/IMG_0206.PNG" alt="logo " width="100" height="100" style="border-radius: 10%;"
+              ><img src="./prium.github.io/elixir/v3.0.0/assets/img/IMG_0206.PNG" alt="logo " width="100"  style="border-radius: 10%;"
             /></a>
           </div>
           <div class="col-sm-6 mt-3 mt-sm-0">
