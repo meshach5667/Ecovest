@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecovest Technologies - FAQs</title>
+    <style>
+        :root {
+            --primary-green: #2D5A27;
+            --light-green: #E7F3E6;
+            --accent-blue: #1a73e8;
+            --text-dark: #333;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f0f7f0 0%, #ffffff 100%);
+            min-height: 100vh;
+            padding: 2rem;
+            color: var(--text-dark);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .header::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--primary-green);
+            margin: 1rem auto;
+            border-radius: 2px;
+        }
+
+        h1 {
+            color: var(--primary-green);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .faq-container {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            color: var(--primary-green);
+            font-weight: 500;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 1.1rem;
+        }
+
+        .faq-question:hover {
+            background: var(--light-green);
+        }
+
+        .faq-answer {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            line-height: 1.6;
+        }
+
+        .faq-answer.active {
+            padding: 1.5rem;
+            max-height: 500px;
+            border-top: 1px solid #eee;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .active .icon {
+            transform: rotate(180deg);
+        }
+
+        .contact-section {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-text {
+            color: var(--primary-green);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .contact-btn {
+            background: var(--accent-blue);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .contact-btn:hover {
+            background: #1557b0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+        }
+
+        .search-container {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .search-input {
+            width: 100%;
+            max-width: 500px;
+            padding: 1rem 1.5rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 50px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-green);
+            box-shadow: 0 0 0 4px rgba(45, 90, 39, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .faq-question {
+                padding: 1.2rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Frequently Asked Questions</h1>
+            <p class="subtitle">Find answers to common questions about our environmental solutions</p>
+        </header>
+
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search FAQs..." id="searchInput">
+        </div>
+
+        <div class="faq-container" id="faqContainer"></div>
+
+        <div class="contact-section">
+            <p class="contact-text">Still have questions?</p>
+           <a href="https://wa.me/message/IO43XIZFRTFHB1"> <button class="contact-btn">Contact Us</button></a>
+        </div>
+    </div>
+
+    <script>
+        const faqs = [
+            {
+                question: "What services does Ecovest Technologies provide?",
+                answer: "Ecovest Technologies offers a wide range of environmental solutions, including sustainable investment strategies, data-driven decision-making, green energy solutions, environmental impact assessments, climate change mitigation, sustainable land management, land degradation neutrality, carbon neutrality projects, capacity building, and adaptive nursery production for reforestation projects."
+            },
+            {
+                question: "How does Ecovest help clients achieve sustainability goals?",
+                answer: "We partner with businesses and governments to develop tailored, data-driven strategies that reduce environmental impact and promote sustainability. From climate-smart energy solutions to detailed impact assessments, our services are designed to support measurable, sustainable growth."
+            },
+            {
+                question: "Who can benefit from Ecovest's services?",
+                answer: "Our services are valuable to various sectors, including agriculture, energy, government, land management, and corporate entities aiming to reduce their ecological footprint, comply with environmental regulations, or make impactful green investments."
+            },
+            {
+                question: "How does Ecovest support compliance with environmental regulations?",
+                answer: "We provide thorough environmental impact assessments (EIA) and audits, helping clients understand their environmental footprint and align operations with local and international environmental standards. Our team also advises on best practices to meet compliance requirements and achieve environmental certifications."
+            },
+            {
+                question: "What is Land Degradation Neutrality (LDN), and how can Ecovest assist?",
+                answer: "Land Degradation Neutrality (LDN) is a United Nations initiative to halt and reverse land degradation globally. We assist organizations in implementing LDN projects that restore degraded land, promote sustainable use, and meet global LDN goals."
+            },
+            {
+                question: "How does Ecovest's data-driven decision-making process work?",
+                answer: "Using advanced data acquisition and digital mapping technology, we gather and analyze environmental data to provide precise, actionable insights. This data-driven approach allows clients to make informed decisions regarding resource use, land management, compliance, and project planning."
+            },
+            {
+                question: "Can Ecovest help my company achieve carbon neutrality?",
+                answer: "Yes! We offer comprehensive carbon neutrality solutions, including carbon credit management, offset projects, and emissions reduction strategies. We guide our clients toward achieving net-zero emissions, helping them become recognized leaders in climate responsibility."
+            },
+            {
+                question: "How does Ecovest support local communities in its projects?",
+                answer: "Our Corporate Social Responsibility (CSR) initiatives focus on community-centered approaches. We prioritize environmental education, renewable energy access, and community-led projects, empowering local populations with resources and training that promote sustainable livelihoods."
+            }
+        ];
+
+        const faqContainer = document.getElementById('faqContainer');
+        const searchInput = document.getElementById('searchInput');
+
+        function createFaqElement(faq) {
+            const faqItem = document.createElement('div');
+            faqItem.className = 'faq-item';
+            faqItem.innerHTML = `
+                <button class="faq-question">
+                    ${faq.question}
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="faq-answer">
+                    ${faq.answer}
+                </div>
+            `;
+            return faqItem;
+        }
+
+        function renderFaqs(faqs) {
+            faqContainer.innerHTML = '';
+            faqs.forEach(faq => {
+                const faqElement = createFaqElement(faq);
+                faqContainer.appendChild(faqElement);
+            });
+        }
+
+        function filterFaqs(searchTerm) {
+            return faqs.filter(faq => 
+                faq.question.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                faq.answer.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+        }
+
+        searchInput.addEventListener('input', (e) => {
+            const filteredFaqs = filterFaqs(e.target.value);
+            renderFaqs(filteredFaqs);
+        });
+
+        document.addEventListener('click', (e) => {
+            if (e.target.closest('.faq-question')) {
+                const question = e.target.closest('.faq-question');
+                const answer = question.nextElementSibling;
+                const isActive = answer.classList.contains('active');
+                
+                // Close all other answers
+                document.querySelectorAll('.faq-answer.active').forEach(item => {
+                    if (item !== answer) {
+                        item.classList.remove('active');
+                        item.previousElementSibling.classList.remove('active');
+                    }
+                });
+
+                // Toggle current answer
+                answer.classList.toggle('active');
+                question.classList.toggle('active');
+
+                // Smooth scroll into view if opening
+                if (!isActive) {
+                    question.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            }
+        });
+
+        // Initial render
+        renderFaqs(faqs);
+    </script>
+</body>
+</html>
