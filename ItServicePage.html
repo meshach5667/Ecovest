@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Transformation & IT Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        :root {
+            --primary-green: #10684b;
+            --light-green: #0c7438;
+            --background-light: #f4f6f7;
+        }
+
+        * {
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+           
+        }
+
+        body {
+            font-family: 'Inter', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--background-light);
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--primary-green) !important;
+        }
+
+        .navbar-brand img {
+            height: 40px;
+            width: auto;
+        }
+
+        .section-header {
+            color: var(--primary-green);
+            margin-bottom: 30px;
+            position: relative;
+            font-weight: 700;
+        }
+
+        h2.section-header::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-green);
+        }
+
+        /* Remove underline from subsection headers */
+        .service-card h4.section-header::after,
+        .benefits-item h4.section-header::after,
+        .card h4.section-header::after {
+            display: none;
+        }
+
+
+        .service-icon {
+            color: var(--primary-green);
+            font-size: 3rem;
+            margin-bottom: 20px;
+            opacity: 0.8;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            border: 1px solid transparent;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-color: var(--light-green);
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-green);
+            border-color: var(--primary-green);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--light-green);
+            border-color: var(--light-green);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .benefits-icon {
+            font-size: 3rem;
+            color: var(--primary-green);
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .benefits-item:hover .benefits-icon {
+            transform: rotate(360deg);
+        }
+
+        footer {
+            background-color: #053827 !important;
+        }
+
+
+        @media (max-width: 768px) {
+            .service-card, .benefits-item {
+                transform: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./prium.github.io/elixir/v3.0.0/assets/img/IMG_0206.PNG" alt="Ecovest Technologies Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services"> IT Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#digital-transformation">Why Digital?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#benefits">Benefits</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="https://wa.me/message/IO43XIZFRTFHB1">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-light text-center py-5 ">
+            <div class="container">
+                <h1 class="section-header">Transform Your Business, Save the Planet 🌍</h1>
+                <p class="lead mb-4">
+                    At Ecovest Technologies, we believe in combining innovation with sustainability. 
+                    Transitioning from manual, paper-based processes to automated digital systems 
+                    is not just about efficiency—it's about making a meaningful impact on the environment.
+                </p>
+                <a href="#services" class="btn btn-primary btn-lg">
+                    Explore Our IT Services <i class="fas fa-chevron-right ms-2"></i>
+                </a>
+            </div>
+        </section>
+    
+        <!-- Why Digital Transformation -->
+        <section id="digital-transformation" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="section-header">Why Choose Digital Transformation?</h2>
+                        <p>
+                            Every business process that goes digital helps reduce the demand for paper, 
+                            conserves our forests, and lowers carbon emissions caused by deforestation 
+                            and paper production. It's a win-win for your business and our planet!
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card bg-light p-4">
+                            <h4 class="section-header">Environmental Impact</h4>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-leaf me-2" style="color: var(--primary-green);"></i> Reduce paper consumption</li>
+                                <li><i class="fas fa-tree me-2" style="color: var(--primary-green);"></i> Conserve forest ecosystems</li>
+                                <li><i class="fas fa-globe me-2" style="color: var(--primary-green);"></i> Lower carbon emissions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Our Services -->
+        <section id="services" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center section-header mb-5">Our Comprehensive IT Services</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="service-card text-center">
+                            <i class="fas fa-desktop service-icon"></i>
+                            <h4 class="section-header">Website Design & Development</h4>
+                            <p>Build a responsive, professional online presence tailored to your goals.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="service-card text-center">
+                            <i class="fas fa-mobile-alt service-icon"></i>
+                            <h4 class="section-header">Web & Mobile Applications</h4>
+                            <p>Transition operations to dynamic, user-friendly platforms that optimize productivity.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="service-card text-center">
+                            <i class="fas fa-paint-brush service-icon"></i>
+                            <h4 class="section-header">Brand Design & Optimization</h4>
+                            <p>Create or revamp your brand identity to reflect innovation and professionalism.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="service-card text-center">
+                            <i class="fas fa-search service-icon"></i>
+                            <h4 class="section-header">SEO Management</h4>
+                            <p>Increase your visibility online and drive organic traffic to your platforms.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="service-card text-center">
+                            <i class="fas fa-share-alt service-icon"></i>
+                            <h4 class="section-header">Social Media Management</h4>
+                            <p>Strategically engage your audience and expand your reach on social platforms.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="service-card text-center">
+                            <i class="fas fa-film service-icon"></i>
+                            <h4 class="section-header">Graphics & Videography</h4>
+                            <p>Communicate your message effectively with compelling visuals and storytelling.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Benefits Section -->
+        <section id="benefits" class="py-5">
+            <div class="container">
+                <h2 class="text-center section-header mb-5">What's in it for You?</h2>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 text-center mb-4 benefits-item">
+                        <i class="fas fa-tachometer-alt service-icon"></i>
+                        <h4 class="section-header">Enhanced Efficiency</h4>
+                        <p>Save time, reduce manual errors, and improve workflows.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center mb-4 benefits-item">
+                        <i class="fas fa-dollar-sign service-icon"></i>
+                        <h4 class="section-header">Cost Savings</h4>
+                        <p>Minimize expenses related to paper, printing, and manual operations.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center mb-4 benefits-item">
+                        <i class="fas fa-seedling service-icon"></i>
+                        <h4 class="section-header">Eco-Conscious Branding</h4>
+                        <p>Align your brand with sustainability values that matter to clients.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center mb-4 benefits-item">
+                        <i class="fas fa-rocket service-icon"></i>
+                        <h4 class="section-header">Future-Ready Business</h4>
+                        <p>Stay ahead of the curve with cutting-edge digital solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Call to Action -->
+        <section id="contact" class="bg-light text-center py-5">
+            <div class="container">
+                <h2 class="section-header">Let's Transform Your Business 🌱</h2>
+                <p class="lead mb-4">
+                    At Ecovest Technologies, we make the transition seamless, impactful, and rewarding. 
+                    Together, we can create a more efficient business model while contributing to the 
+                    preservation of the environment for future generations.
+                </p>
+                <a href="https://wa.me/message/IO43XIZFRTFHB1" class="btn btn-primary btn-lg">
+                    Contact Us Today <i class="fas fa-chevron-right ms-2"></i>
+                </a>
+            </div>
+        </section>
+    
+    <!-- [Previous sections remain the same until footer] -->
+
+    <!-- Footer -->
+    <footer class="text-white py-4 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-light">Ecovest Technologies</h5>
+                    <p>Transforming businesses, preserving our planet.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-light">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#services" class="text-white">IT Services</a></li>
+                        <li><a href="#digital-transformation" class="text-white">Why Digital?</a></li>
+                        <li><a href="#benefits" class="text-white">Benefits</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-light">Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 Ecovest Technologies. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
